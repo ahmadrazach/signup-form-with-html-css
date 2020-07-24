@@ -1,0 +1,106 @@
+
+
+
+<html>
+    <head>
+      <title>Signup Form for Startup X</title>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Montserrat', sans-serif;
+    	        background-color: #BDF1F6;
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.85em;
+                color: rgba(66,66,66 ,1);
+            }
+
+        main {
+                width: 75%;
+                background-color: #F2FCFC;
+                display:flex;
+                border-radius: 15px;
+            }
+            section{
+                text-align: center;
+
+            }
+        section, form {
+                width: 50%;
+                padding: 50px 70px;
+
+            }
+
+
+/*Reduce the width of the image*/
+            img {
+                width: 100px;
+                border-radius: 50%;
+                display: block;
+                margin: 0 auto;
+            }   
+            
+
+            p {
+                line-height: 1.7 /* change this to a higher value like 2 0r 3 to see the difference*/
+            }
+
+            input[type=email],[type=password]{
+                border: none;
+  border-bottom: 2px solid rgb(194, 190, 190);
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+            }
+
+            button{
+               background-color: #0e2289; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  font-family: 'Montserrat', sans-serif;
+  transition-duration: 0.4s;
+            }
+            button:hover {
+  background-color: #ffffff; /* Green */
+  color: rgb(73, 97, 252);
+}
+
+            
+
+    </style>
+    </head>
+    <body>
+       <main>
+           <section class="testimonial">
+               <img src="mypic.png" />
+               <h3> Ahmad Raza </h3>
+               <p>
+                I chose programming as a profession but designing choose me. Hi! I am Ahmad, a Computer Science student, and programmer who loves to design and develop.
+               </p>
+           </section>
+           <form class="signup-form">
+               <h3> Signup Form </h3>
+               <div>
+                   <input type="email" name="email" placeholder="Email Address">
+                   <input type="password" name="password" placeholder="Password">
+               </div>
+               <div style="padding: 1rem">
+                   <input type="checkbox" name="agreement">
+                   <span>I Agree with the terms of service</span>
+               </div>      
+               <button type="submit"> SIGNUP </button>
+           </form>
+       </main>
+   </body>
+   </html>
